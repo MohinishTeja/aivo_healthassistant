@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    </head>
+    <body>
+        <div class="alan-btn"></div>
+
+<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "ba2ca1cc7a7ec86b2ff9f3ee75c193942e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
+       <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">The Generics</h1>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">MUSIC</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" src="Images/Album 1.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" id="cough-a" type="button" onclick="myFunction(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" src="Images/Album 2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button" id="fever-a">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="Images/Album 3.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="head-a">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="Images/Album 4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="pain-a">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 5</span>
+                    <img class="shop-item-image" src="Images/Album 4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="vomit-a">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 6</span>
+                    <img class="shop-item-image" src="Images/Album 4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="stomach-a">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="mask-a">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="Images/Cofee.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="san-a">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Vitamin Tablets</span>
+                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="vit-a">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Disinfectant Tissues</span>
+                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="wipe-a">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                <div id="cough" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">Album1</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="l">12.99</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kk(); check();">-</button>
+                        <p id="still" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="k(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+                <div id="fever" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">Album1</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="l">12.99</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kk(); check();">-</button>
+                        <p id="still" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="k(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+                <div id="head" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 2.png" width="100" height="100">
+                        <span class="cart-item-title">Album2</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="l">12.99</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kk(); check();">-</button>
+                        <p id="still" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="k(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+
+                <div id="pain" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 3.png" width="100" height="100">
+                        <span class="cart-item-title">Album3</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="l">12.99</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kk(); check();">-</button>
+                        <p id="still" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="k(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+
+                <div id="vomit" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 4.png" width="100" height="100">
+                        <span class="cart-item-title">Album4</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="l">12.99</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kk(); check();">-</button>
+                        <p id="still" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="k(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+                <div id="stomach" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">Album1</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="l">12.99</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kk(); check();">-</button>
+                        <p id="still" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="k(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$<p id="still2">0</p></span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Generics</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
