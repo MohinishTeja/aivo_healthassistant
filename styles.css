@@ -161,6 +161,7 @@ html, body {
     color: white;
     background-color: #56CCF2;
     border: none;
+    border:none;
     border-radius: .3em;
     font-weight: bold;
 }
