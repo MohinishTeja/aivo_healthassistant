@@ -9,7 +9,6 @@
     </head>
     <body>
         <div class="alan-btn"></div>
-        <!--hello world-->
 
 <script type="text/javascript"
  src="https://studio.alan.app/web/lib/alan_lib.js"></script>
@@ -91,10 +90,9 @@
         else if(commandData.command === "wipen"){
             alanwipen()
         }
-          else{
-              pur();
-          }
-
+        else{
+            document.getElementById('lop').click();
+        }
 
       },
       rootEl: document.getElementById("alan-btn"),
@@ -112,6 +110,7 @@
                     <li><a href="index.html">STORE</a></li>
                     <li><a href="#">ABOUT</a></li>
                 </ul>
+
             </nav>
             <h1 class="band-name band-name-large">The Generics</h1>
         </header>
@@ -362,7 +361,7 @@
                 <strong class="cart-total-title">Total</strong>
                 <span class="cart-total-price">$<p id="still2">0</p></span>
             </div>
-            <button class="btn btn-primary btn-purchase" type="button" id="pur" onclick="pur()">PURCHASE</button>
+            <!--<button class="btn btn-primary btn-purchase" type="button" id="pur" onclick="pur()">PURCHASE</button>-->
         </section>
 
 
@@ -371,7 +370,46 @@
 
         
         
-        
+        <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCtdFz4bUGXwPaCFBbZGil5g_VCQLyZwk4",
+    authDomain: "alan-249e1.firebaseapp.com",
+    databaseURL: "https://alan-249e1.firebaseio.com",
+    projectId: "alan-249e1",
+    storageBucket: "alan-249e1.appspot.com",
+    messagingSenderId: "824516037558",
+    appId: "1:824516037558:web:f25bc82c6b60c3198b0f17",
+    measurementId: "G-J1WND8NY8D"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  function writeData(){
+    firebase.database().ref("USER").set({
+    	name:document.getElementById("name").value,
+    	Address:document.getElementById("Address").value,
+        Phone:document.getElementById("Phone").value,
+        data:documnet.getEleemntById("zxc").value
+    })
+  }
+</script>
+            <form>
+
+                 <input type="text" name="NAME" placeholder="NAME" id="name" style="margin-left: 47%;" required> <br>
+                 <textarea name="ADDRESS" rows="10" cols="30" placeholder="Please Enter Your Address" id="Address" required style="margin-left: 45%;"></textarea><br>
+                 <input type="tel" name="PHONE NO" placeholder="PHONE NO" id="Phone" style="margin-left: 47%;" required><br>
+                 <p id="zxc" style="margin-left: 45%;"></p>
+                 <button class="btn btn-primary btn-purchase" id="lop" onclick="pur(); data(); writeData();">SUBMIT</button>
+
+             </form>
         
         
         

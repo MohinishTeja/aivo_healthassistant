@@ -7,7 +7,23 @@ if (document.readyState == 'loading') {
 function pur(){
     var e=check();
     alert("Thanks for purchase. Your total order value is "+parseInt(e));
-    location.reload()
+    
+}
+
+function data(){
+    var a=cough1();
+    var b=fever1();
+    var c=head1();
+    var d=pain1();
+    var e=vomit1();
+    var f=stomach1();
+    var g=mask1();
+    var h=san1();
+    var i=vit1();
+    var j=wipe1();
+    document.getElementById("zxc").innerHTML=a+','+b+','+c+','+d+','+e+','+f+','+g+','+h+','+i+','+j;
+    
+
 }
 
             
@@ -203,7 +219,176 @@ function wipe(){
     
 
     
-    
+
+    function cough1(){
+        var u=document.getElementById("cough")
+        if(window.getComputedStyle(u).display != "none"){
+        var x=document.getElementById("l").innerHTML;
+        var o=document.getElementById("still").innerHTML;
+        var xx=parseInt(x)
+        var xy=parseInt(o)
+        var z=xy;
+        return z;
+        }
+        else{
+        var z=0
+        return z;
+        }
+        }
+        
+        
+        
+        function fever1(){
+            var u=document.getElementById("fever")
+            if(window.getComputedStyle(u).display != "none"){
+            var x=document.getElementById("la").innerHTML;
+            var o=document.getElementById("stilla").innerHTML;
+            var xx=parseInt(x)
+            var xy=parseInt(o)
+            var z=xy;
+            return z;
+            }
+            else{
+            var z=0
+            return z;
+            }
+            }
+            
+        
+        function head1(){
+        var u=document.getElementById("head")
+        if(window.getComputedStyle(u).display != "none"){
+        var x=document.getElementById("lb").innerHTML;
+        var o=document.getElementById("stillb").innerHTML;
+        var xx=parseInt(x)
+        var xy=parseInt(o)
+        var z=xy;
+        return z;
+        }
+        else{
+        var z=0
+        return z;
+        }
+        }
+        
+        
+        
+        function pain1(){
+            var u=document.getElementById("pain")
+            if(window.getComputedStyle(u).display != "none"){
+            var x=document.getElementById("lc").innerHTML;
+            var o=document.getElementById("stillc").innerHTML;
+            var xx=parseInt(x)
+            var xy=parseInt(o)
+            var z=xy;
+            return z;
+            }
+            else{
+            var z=0
+            return z;
+            }
+            }
+            
+        
+        
+        
+        function vomit1(){
+        var u=document.getElementById("vomit")
+        if(window.getComputedStyle(u).display != "none"){
+        var x=document.getElementById("ld").innerHTML;
+        var o=document.getElementById("stilld").innerHTML;
+        var xx=parseInt(x)
+        var xy=parseInt(o)
+        var z=xy;
+        return z;
+        }
+        else{
+        var z=0
+        return z;
+        }
+        }
+        
+        function stomach1(){
+            var u=document.getElementById("stomach")
+            if(window.getComputedStyle(u).display != "none"){
+            var x=document.getElementById("le").innerHTML;
+            var o=document.getElementById("stille").innerHTML;
+            var xx=parseInt(x)
+            var xy=parseInt(o)
+            var z=xy;
+            return z;
+            }
+            else{
+            var z=0
+            return z;
+            }
+            }
+        
+        
+        function mask1(){
+        var u=document.getElementById("mask")
+        if(window.getComputedStyle(u).display != "none"){
+        var x=document.getElementById("lf").innerHTML;
+        var o=document.getElementById("stillf").innerHTML;
+        var xx=parseInt(x)
+        var xy=parseInt(o)
+        var z=xy;
+        return z;
+        }
+        else{
+        var z=0
+        return z;
+        }
+        }
+        
+        function san1(){
+            var u=document.getElementById("san")
+            if(window.getComputedStyle(u).display != "none"){
+            var x=document.getElementById("lg").innerHTML;
+            var o=document.getElementById("stillg").innerHTML;
+            var xx=parseInt(x)
+            var xy=parseInt(o)
+            var z=xy;
+            return z;
+            }
+            else{
+            var z=0
+            return z;
+            }
+            }
+        
+        
+        function vit1(){
+        var u=document.getElementById("vit")
+        if(window.getComputedStyle(u).display != "none"){
+        var x=document.getElementById("lh").innerHTML;
+        var o=document.getElementById("stillh").innerHTML;
+        var xx=parseInt(x)
+        var xy=parseInt(o)
+        var z=xy;
+        return z;
+        }
+        else{
+        var z=0
+        return z;
+        }
+        }
+        
+        
+        function wipe1(){
+            var u=document.getElementById("wipe")
+            if(window.getComputedStyle(u).display != "none"){
+            var o=document.getElementById("stilli").innerHTML;
+            var xy=parseInt(o)
+            var z=xy;
+            return z;
+            }
+            else{
+            var z=0
+            return z;
+            }
+            }
+            
 
 
 // Add or subtract Item Quantity
