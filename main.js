@@ -3,7 +3,7 @@ if (document.readyState == 'loading') {
 } else {
     ready()
 }
-
+//Hello there
 function pur(){
     var e=check();
     alert("Thanks for purchase. Your total order value is "+parseInt(e));
