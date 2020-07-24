@@ -7,7 +7,7 @@ if (document.readyState == 'loading') {
     ready()
 }
 
-//hello world
+//hello world.True
 
             
 function check(){
